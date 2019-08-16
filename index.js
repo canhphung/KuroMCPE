@@ -1,7 +1,6 @@
 const botconfig = require("./botconfig.json");
 const Discord = require('discord.js');
 const fs = require("fs");
-const superagent = require("superagent");
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.commands = new Discord.Collection();
@@ -28,7 +27,7 @@ bot.commands.set(props.help.name, props);
 bot.on("ready", async ()  => {  
 console.log(`${bot.user.username} Đã hoạt động ở ${bot.guilds.size} máy chủ!`);
 
-bot.user.setActivity("Cảnh Phùng", {type: "PLAYING"});
+bot.user.setActivity("Tom and Jerry", {type: "WATCHING"});
 
 //bot.user.setGame("on SourceCade!");
   
